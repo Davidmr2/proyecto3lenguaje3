@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User.WL85DELH\\Desktop\\REPOSITORIOS\\Actividad3prog3\\proyecto3lorenzo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4BC6F20-2F97-46FA-AEA6-0B1055DF542E}|proyecto3lorenzo.csproj|c:\\users\\user.wl85delh\\desktop\\repositorios\\actividad3prog3\\proyecto3lorenzo\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4BC6F20-2F97-46FA-AEA6-0B1055DF542E}|proyecto3lorenzo.csproj|solutionrelative:controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4BC6F20-2F97-46FA-AEA6-0B1055DF542E}|proyecto3lorenzo.csproj|c:\\users\\user.wl85delh\\desktop\\repositorios\\actividad3prog3\\proyecto3lorenzo\\models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4BC6F20-2F97-46FA-AEA6-0B1055DF542E}|proyecto3lorenzo.csproj|solutionrelative:models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstudiantesController.cs",
+              "DocumentMoniker": "C:\\Users\\User.WL85DELH\\Desktop\\REPOSITORIOS\\Actividad3prog3\\proyecto3lorenzo\\Controllers\\EstudiantesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiantesController.cs",
+              "ToolTip": "C:\\Users\\User.WL85DELH\\Desktop\\REPOSITORIOS\\Actividad3prog3\\proyecto3lorenzo\\Controllers\\EstudiantesController.cs",
+              "RelativeToolTip": "Controllers\\EstudiantesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:21:30.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstudianteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User.WL85DELH\\Desktop\\REPOSITORIOS\\Actividad3prog3\\proyecto3lorenzo\\Models\\EstudianteViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\EstudianteViewModel.cs",
+              "ToolTip": "C:\\Users\\User.WL85DELH\\Desktop\\REPOSITORIOS\\Actividad3prog3\\proyecto3lorenzo\\Models\\EstudianteViewModel.cs",
+              "RelativeToolTip": "Models\\EstudianteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:17:58.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
