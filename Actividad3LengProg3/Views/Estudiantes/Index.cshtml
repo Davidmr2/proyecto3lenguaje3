@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Actividad3LengProg3.Models.EstudianteViewModel
+
+<h2>Registrar Estudiante</h2>
+
+@using (Html.BeginForm("Registrar", "Estudiantes", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+
+    <div>
+        @Html.LabelFor(m => m.Matricula)
+        @Html.TextBoxFor(m => m.Matricula)
+        @Html.ValidationMessageFor(m => m.Matricula)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Nombre)
+        @Html.TextBoxFor(m => m.Nombre)
+        @Html.ValidationMessageFor(m => m.Nombre)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Edad)
+        @Html.TextBoxFor(m => m.Edad)
+        @Html.ValidationMessageFor(m => m.Edad)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Correo)
+        @Html.TextBoxFor(m => m.Correo)
+        @Html.ValidationMessageFor(m => m.Correo)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Carrera)
+        @Html.TextBoxFor(m => m.Carrera)
+        @Html.ValidationMessageFor(m => m.Carrera)
+    </div>
+    <button type="submit">Registrar</button>
+}
