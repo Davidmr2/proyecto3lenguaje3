@@ -1,0 +1,93 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Actividad3LengProg3.Models.EstudianteViewModel
+
+
+@{
+    ViewBag.Title = "Editar Estudiante";
+}
+
+<h2 style="color:#117A65;">Editar Estudiante</h2>
+
+@using (Html.BeginForm("Editar", "Estudiantes", FormMethod.Post))
+{
+    <div style="background:#e8f6f3; padding:20px; border-radius:10px; max-width:700px;">
+        <div class="form-group">
+            @Html.LabelFor(m => m.NombreCompleto)
+            @Html.TextBoxFor(m => m.NombreCompleto, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.NombreCompleto)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Matricula)
+            @Html.TextBoxFor(m => m.Matricula, new { @class = "form-control", @readonly = "readonly" })
+            @Html.ValidationMessageFor(m => m.Matricula)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Carrera)
+            @Html.DropDownListFor(m => m.Carrera, new SelectList(new[] { "Ingeniería", "Medicina", "Derecho", "Arquitectura" }, Model.Carrera), "-- Selecciona --", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Carrera)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.CorreoInstitucional)
+            @Html.TextBoxFor(m => m.CorreoInstitucional, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.CorreoInstitucional)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Telefono)
+            @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Telefono)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.FechaNacimiento)
+            @Html.TextBoxFor(m => m.FechaNacimiento, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+            @Html.ValidationMessageFor(m => m.FechaNacimiento)
+        </div>
+
+        <div class="form-group">
+            <label>Género</label><br />
+            @Html.RadioButtonFor(m => m.Genero, "Masculino") Masculino
+            @Html.RadioButtonFor(m => m.Genero, "Femenino") Femenino
+            @Html.ValidationMessageFor(m => m.Genero)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Turno)
+            @Html.DropDownListFor(m => m.Turno, new SelectList(new[] { "Mañana", "Tarde", "Noche" }, Model.Turno), "-- Selecciona --", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Turno)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.TipoIngreso)
+            @Html.DropDownListFor(m => m.TipoIngreso, new SelectList(new[] { "Nuevo ingreso", "Transferencia", "Reingreso" }, Model.TipoIngreso), "-- Selecciona --", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.TipoIngreso)
+        </div>
+
+        <div class="form-group">
+            @Html.CheckBoxFor(m => m.EstaBecado) ¿Está becado?
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PorcentajeBeca)
+            @Html.TextBoxFor(m => m.PorcentajeBeca, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PorcentajeBeca)
+        </div>
+
+        <div class="form-group">
+            @Html.CheckBoxFor(m => m.Terminos) Acepto los términos y condiciones
+            @Html.ValidationMessageFor(m => m.Terminos)
+        </div>
+
+        <button type="submit" class="btn btn-success">Guardar Cambios</button>
+        @Html.ActionLink("Cancelar", "Lista", null, new { @class = "btn btn-secondary", style = "margin-left:10px;" })
+    </div>
+}
+
+

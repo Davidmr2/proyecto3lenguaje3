@@ -1,0 +1,33 @@
+﻿@model List<Actividad3LengProg3.Models.EstudianteViewModel>
+
+@{
+    ViewBag.Title = "Lista de Estudiantes";
+}
+
+<h2 style="color:#2E86C1;">Lista de Estudiantes</h2>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Nombre</th>
+        <th>Matrícula</th>
+        <th>Carrera</th>
+        <th>Correo</th>
+        <th>Teléfono</th>
+        <th>Acciones</th>
+    </tr>
+
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.NombreCompleto</td>
+            <td>@e.Matricula</td>
+            <td>@e.Carrera</td>
+            <td>@e.CorreoInstitucional</td>
+            <td>@e.Telefono</td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { matricula = e.Matricula }, new { @class = "btn btn-sm btn-warning" }) |
+                @Html.ActionLink("Eliminar", "Eliminar", new { matricula = e.Matricula }, new { @class = "btn btn-sm btn-danger" })
+            </td>
+        </tr>
+    }
+</table>
